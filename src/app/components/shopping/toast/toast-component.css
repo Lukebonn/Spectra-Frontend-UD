@@ -19,18 +19,27 @@
 
 .bg-fade-defender {
   background: linear-gradient(
-    to right,
-    rgba(var(--defender-color-rgb), 0.5) 10%,
-    rgba(var(--defender-color-rgb), 0.25) 40%,
+    to top,
+    rgba(var(--defender-color-rgb), 0.4) 10%,
+    rgba(var(--defender-color-rgb), 0.2) 40%,
     transparent
   );
 }
 
 .bg-fade-attacker {
   background: linear-gradient(
-    to right,
+    to top,
     rgba(var(--attacker-color-rgb), 0.5) 10%,
     rgba(var(--attacker-color-rgb), 0.25) 40%,
+    transparent
+  );
+}
+
+.bg-fade-none {
+  background: linear-gradient(
+    to top,
+    rgba(var(--color-timer-rgb), 1) 10%,
+    rgba(var(--color-timer-rgb), 0.6) 40%,
     transparent
   );
 }

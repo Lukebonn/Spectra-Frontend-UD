@@ -16,7 +16,8 @@ export class ToastComponent {
     () => !this.dataModel.toastInfo().active || !(this.dataModel.match().roundPhase === "shopping"),
   );
 
-  teamSite = computed(() => {
+  teamSide = computed(() => {
+    if (this.toastInfo().selectedTeam === "none") return "none";
     if (this.dataModel.match().teams[this.toastInfo().selectedTeam == "left" ? 0 : 1].isAttacking) {
       return "attacker";
     } else {
